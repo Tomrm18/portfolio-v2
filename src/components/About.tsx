@@ -12,21 +12,23 @@ export const About = ({ config }: AboutProps) => {
     id="about"
   >
     <div className="w-100">
-      <h1 className="mb-0">
-        {config.firstName}
-        <span className="text-primary">{config.lastName}</span>
-      </h1>
-      <div className="subheading mb-5">
+      <div className="text-center">
+        <h1 className="mb-0">
+          {config.firstName}
+          <span className="text-primary">{config.lastName}</span>
+        </h1>
+      </div>
+      <div className="subheading mb-5 text-center">
         <a href={`mailto:${config.email}`}>{config.email}</a>
       </div>
       <p className="lead mb-5">
       {config.about}
       </p>
-      <div className="social-icons">
+      <div className="social-icons text-center">
         {config.socialLinks.map((social) => {
           const { icon, url } = social;
           return (
-            <a key={url} href={url}>
+            <a key={url} href={url} target="_blank">
               <i className={`fab ${icon}`}></i>
             </a>
           );
