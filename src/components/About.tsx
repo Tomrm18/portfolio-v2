@@ -15,7 +15,7 @@ export const About = ({ config }: AboutProps) => {
       <div className="text-center">
         <h1 className="mb-0">
           {config.firstName}
-          <span className="text-primary">{config.lastName}</span>
+          <span className="text-primary"> {config.lastName}</span>
         </h1>
       </div>
       <div className="subheading mb-5 text-center">
