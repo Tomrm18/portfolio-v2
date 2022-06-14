@@ -19,7 +19,9 @@ export const About = ({ config }: AboutProps) => {
       <div className="subheading mb-5">
         <a href={`mailto:${config.email}`}>{config.email}</a>
       </div>
-      <p className="lead mb-5">lorem</p>
+      <p className="lead mb-5">
+      {config.about}
+      </p>
       <div className="social-icons">
         {config.socialLinks.map((social) => {
           const { icon, url } = social;

@@ -10,7 +10,8 @@ module.exports = {
   pathPrefix: `/gatsby-starter-resume/`, // This path is subpath of your hosting https://domain/portfolio
   firstName: 'Thomas',
   lastName: 'Maguire',
-  about: 'lorem',
+  about:
+    'I am an undergraduate Computer Science student and Software Engineer with a passion for developing and building solutions to solve real-world problems.',
   // social
   socialLinks: [
     {
@@ -75,4 +76,7 @@ module.exports = {
       },
     ],
   },
+  interests: [
+    'I have a deep passion for Software Engineering. Majority of my experience has been in Full Stack Development, however I am still exploring other area such as Systems Engineering, Application Development, and Mobile App Developemnt.',
+  ],
 };

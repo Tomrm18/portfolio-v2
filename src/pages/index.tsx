@@ -31,7 +31,7 @@ const IndexPage = () => (
 
       <hr className="m-0" />
 
-      <Interests />
+      <Interests interests={config.interests} />
 
     </div>
   </Layout>
