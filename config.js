@@ -1,5 +1,5 @@
 module.exports = {
-  siteTitle: 'Gatsby Starter Resume', // <title>
+  siteTitle: 'TM',
   manifestName: 'Resume',
   manifestShortName: 'Landing', // max 12 characters
   manifestStartUrl: '/',
@@ -10,6 +10,7 @@ module.exports = {
   pathPrefix: `/gatsby-starter-resume/`, // This path is subpath of your hosting https://domain/portfolio
   firstName: 'Thomas',
   lastName: 'Maguire',
+  about: 'lorem',
   // social
   socialLinks: [
     {
@@ -23,5 +24,42 @@ module.exports = {
       url: 'https://linkedin.com/in/theanubhav/',
     },
   ],
-  email: 'anubhav.srivastava00@gmail.com',
+  email: 'tmaguire2002@yahoo.com.au',
+  experience: [
+    {
+      company: 'Gymetrix',
+      role: 'Software Engineer',
+      startDate: 'Apr 2022',
+      endDate: 'Current',
+      priority: 'Contract',
+      tasks: [
+        'Developed secure and performant customer facing gym application using React Native and TypeScript.',
+        'Enabled secure login and authentication via Encryption and Biometrics.',
+        'Established secure API connections to a fully customised backend to pull and render data from.',
+      ],
+      imageName: 'gymetrix',
+    },
+    {
+      company: 'The University of Newcastle',
+      role: 'IT Client Support Assistant',
+      startDate: 'Jan 2022',
+      endDate: 'Current',
+      priority: 'Part-time',
+      tasks: [
+        'Utilised University customised ServiceNow platform to manage multiple client tickets.',
+        'Communicated with clients, enabling quick and effective customer support.',
+        'Updated IT articles ensuring IT Staff can access up-to-date information in a readable and reliable way.',
+      ],
+      imageName: 'uon',
+    },
+  ],
+  education: [
+    {
+      school: 'The University of Newcastle',
+      degree: 'Bachelor of Computer Science',
+      startDate: 'Feb 2020',
+      endData: 'Current',
+      priority: 'Full-time',
+    },
+  ],
 };

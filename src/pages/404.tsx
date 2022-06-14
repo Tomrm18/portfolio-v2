@@ -1,7 +1,7 @@
-import React, { FC } from 'react';
-import Layout from '../components/Layout';
+import React from 'react';
+import { Layout} from '../components';
 
-const IndexPage: FC = () => (
+const IndexPage = () => (
   <Layout>
     <div className="container-fluid p-0">
       <section
