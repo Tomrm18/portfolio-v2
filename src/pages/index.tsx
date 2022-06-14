@@ -1,10 +1,9 @@
 import React from 'react';
 
-import { Layout, Sidebar, Education, Skills, Interests, About } from '../components';
+import { Layout, Sidebar, Education, Skills, Interests, About, Extracurriculars, Experience } from '../components';
 
 import config from '../../config';
 
-import Experience from '../components/Experience';
 
 const IndexPage = () => (
   <Layout>
@@ -21,6 +20,10 @@ const IndexPage = () => (
       <hr className="m-0" />
 
       <Education education={config.education} />
+
+      <hr className="m-0" />
+
+      <Extracurriculars clubs={config.extracurriculars.studentClubs} />
 
       <hr className="m-0" />
 

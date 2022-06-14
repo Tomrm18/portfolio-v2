@@ -9,7 +9,7 @@ type ExperienceProps = {
   experience: any
 }
 
-const Experience = ({ experience }: ExperienceProps) => {
+export const Experience = ({ experience }: ExperienceProps) => {
 
   const logoImages = useLogoImages();
 
@@ -46,4 +46,3 @@ const Experience = ({ experience }: ExperienceProps) => {
   );
 }
 
-export default Experience;

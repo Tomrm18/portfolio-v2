@@ -63,4 +63,16 @@ module.exports = {
       imageName: 'uon',
     },
   ],
+  extracurriculars: {
+    studentClubs: [
+      {
+        name: 'The University of Newcastle Computing Society (UONCS)',
+        title: 'Founder & Vice President',
+        date: {
+          start: 2022,
+          end: 'Current',
+        },
+      },
+    ],
+  },
 };

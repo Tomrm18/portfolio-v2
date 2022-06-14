@@ -5,6 +5,7 @@ export * from './Sidebar';
 export * from './About';
 export * from './Education';
 export * from './Experience';
+export * from './Extracurriculars';
 export * from './Skills';
 export * from './Interests';
 
