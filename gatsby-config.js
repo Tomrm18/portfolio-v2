@@ -1,5 +1,4 @@
 const config = require('./config');
-const path = require('path');
 
 module.exports = {
   pathPrefix: config.pathPrefix,
@@ -43,5 +42,11 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingId: 'G-CJGWSVJCNF',
+      },
+    },
   ],
 };
