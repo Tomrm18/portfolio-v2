@@ -1,6 +1,31 @@
-import React from "react"
+import React, { useState } from "react"
+import { SkillIcon } from "./SkillIcon"
+
 
 export const Skills = () => {
+
+  const skills = [
+    { name: "html", logo: "fa-html5" },
+    { name: "css", logo: "fa-css3-alt" },
+    { name: "js", logo: "fa-js-square" },
+    { name: "react", logo: "fa-react" },
+    { name: "git", logo: "fa-git-alt" },
+    { name: "python", logo: "fa-python" },
+  ]
+
+
+  const renderSkills = (skills) => {
+    return skills.map((skill, index) => {
+
+      return (
+        <SkillIcon 
+          key={index}
+          skill={skill.logo}
+        />
+      )
+    })
+  }
+
   return (
     <section
     className="resume-section p-3 p-lg-5 d-flex align-items-center"
@@ -13,62 +38,11 @@ export const Skills = () => {
         Programming Languages &amp; Tools
       </div>
       <ul className="list-inline dev-icons">
-        <li className="list-inline-item">
-          <i className="fab fa-html5"></i>
-        </li>
-        <li className="list-inline-item">
-          <i className="fab fa-css3-alt"></i>
-        </li>
-        <li className="list-inline-item">
-          <i className="fab fa-js-square"></i>
-        </li>
-        <li className="list-inline-item">
-          <i className="fab fa-angular"></i>
-        </li>
-        <li className="list-inline-item">
-          <i className="fab fa-react"></i>
-        </li>
-        <li className="list-inline-item">
-          <i className="fab fa-node-js"></i>
-        </li>
-        <li className="list-inline-item">
-          <i className="fab fa-sass"></i>
-        </li>
-        <li className="list-inline-item">
-          <i className="fab fa-less"></i>
-        </li>
-        <li className="list-inline-item">
-          <i className="fab fa-wordpress"></i>
-        </li>
-        <li className="list-inline-item">
-          <i className="fab fa-gulp"></i>
-        </li>
-        <li className="list-inline-item">
-          <i className="fab fa-grunt"></i>
-        </li>
-        <li className="list-inline-item">
-          <i className="fab fa-npm"></i>
-        </li>
-      </ul>
 
-      <div className="subheading mb-3">Workflow</div>
-      <ul className="fa-ul mb-0">
-        <li>
-          <i className="fa-li fa fa-check"></i>
-          Mobile-First, Responsive Design
+        <li className="list-inline-item">
+          {renderSkills(skills)}
         </li>
-        <li>
-          <i className="fa-li fa fa-check"></i>
-          Cross Browser Testing &amp; Debugging
-        </li>
-        <li>
-          <i className="fa-li fa fa-check"></i>
-          Cross Functional Teams
-        </li>
-        <li>
-          <i className="fa-li fa fa-check"></i>
-          Agile Development &amp; Scrum
-        </li>
+
       </ul>
     </div>
   </section>

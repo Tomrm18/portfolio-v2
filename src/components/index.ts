@@ -9,3 +9,4 @@ export * from './Skills';
 export * from './Interests';
 
 export * from './SectionItem';
+export * from './SkillIcon';
