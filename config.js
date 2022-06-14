@@ -58,8 +58,9 @@ module.exports = {
       school: 'The University of Newcastle',
       degree: 'Bachelor of Computer Science',
       startDate: 'Feb 2020',
-      endData: 'Current',
+      endDate: 'Current',
       priority: 'Full-time',
+      imageName: 'uon',
     },
   ],
 };

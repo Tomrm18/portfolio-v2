@@ -13,8 +13,6 @@ const Experience = ({ experience }: ExperienceProps) => {
 
   const logoImages = useLogoImages();
 
-  console.log(logoImages)
-
   const renderExperiences = (experience) => {
 
     return experience.map((job, index) => {
@@ -26,9 +24,8 @@ const Experience = ({ experience }: ExperienceProps) => {
         subtitle={job.company}
         description={job.description}
         descriptionList={job.tasks}
-        rightTitle={`${job.startDate} - ${job.endDate}`}
+        rightTitle={`${job.startDate} - ${job.endDate} | ${job.priority}`}
         imageRenderer={<img width={80} src={logoImages[job.imageName].publicURL}  alt={job.imageName} />}
-        testId={'experience-content'}
         />
       )
     })

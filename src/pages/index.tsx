@@ -20,7 +20,7 @@ const IndexPage = () => (
 
       <hr className="m-0" />
 
-      <Education config={config} />
+      <Education education={config.education} />
 
       <hr className="m-0" />
 
