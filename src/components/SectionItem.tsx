@@ -32,7 +32,7 @@ function SectionItem(props) {
           {imageRenderer}
         </div>
       )}
-      <div className="resume-content" data-testid="section-content">
+      <div className="resume-content w-100" data-testid="section-content">
         <div className="d-flex justify-content-between">
           <h3 className="mb-0">{title}</h3>
           <div
