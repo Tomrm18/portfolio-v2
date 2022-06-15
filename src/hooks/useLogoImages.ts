@@ -4,7 +4,7 @@ export const useLogoImages = () => {
   // Get SVG logo details using GraphQL
   const data = useStaticQuery(graphql`
     {
-      logoImages: allFile(filter: {relativeDirectory: {eq: "logos"}}) {
+      logoImages: allFile(filter: {relativeDirectory: {eq: "images"}}) {
         results: edges {
           logo: node {
             name

@@ -9,8 +9,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `svg`,
-        path: `${__dirname}/src/assets/svg`,
+        name: `images`,
+        path: `${__dirname}/src/assets`,
       },
     },
     'gatsby-plugin-react-helmet',
