@@ -75,6 +75,7 @@ module.exports = {
         },
       },
     ],
+    personProjects: [],
   },
   interests: [
     'I have a deep passion for Software Engineering. Majority of my experience has been in Full Stack Development, however I am still exploring other area such as Systems Engineering, Application Development, and Mobile App Developemnt.',
