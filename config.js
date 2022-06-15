@@ -28,6 +28,18 @@ module.exports = {
   email: 'tmaguire2002@yahoo.com.au',
   experience: [
     {
+      company: 'Schenck Process',
+      role: 'R&D Digital Engineer',
+      startDate: 'July 2022',
+      endDate: 'Current',
+      priority: 'Internship',
+      tasks: [
+        'Developed and tested software applications in C++, deployed said applications as a new product for the company.',
+        'Leveraged problem solving skills while developing an application throughout its full product lifecycle.',
+      ],
+      imageName: 'schenck_process',
+    },
+    {
       company: 'Gymetrix',
       role: 'Software Engineer',
       startDate: 'Apr 2022',
