@@ -29,7 +29,7 @@ module.exports = {
   experience: [
     {
       company: 'Gymetrix',
-      role: 'Software Engineer',
+      role: 'Mobile App Developer',
       startDate: 'Apr 2022',
       endDate: 'Current',
       priority: 'Contract',
