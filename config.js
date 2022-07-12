@@ -28,6 +28,19 @@ module.exports = {
   email: 'tmaguire2002@yahoo.com.au',
   experience: [
     {
+      company: 'Schenck Process',
+      role: 'R&D Digital Engineer',
+      startDate: 'July 2022',
+      endDate: 'Current',
+      priority: 'Internship',
+      tasks: [
+        'Developed software application in C++, refactored from Python codebase to C++.',
+        'Employed project management techniques while utilising Atlassian software including Jira, Confluence, and Bitbucket, to ensure each development milestone is tracked and completed on time. ',
+        'Leveraged problem solving skills while developing an application throughout its full product lifecycle.',
+      ],
+      imageName: 'schenck_process',
+    },
+    {
       company: 'Gymetrix',
       role: 'Mobile App Developer',
       startDate: 'Apr 2022',
@@ -44,7 +57,7 @@ module.exports = {
       company: 'The University of Newcastle',
       role: 'IT Client Support Assistant',
       startDate: 'Jan 2022',
-      endDate: 'Current',
+      endDate: 'July 2022',
       priority: 'Part-time',
       tasks: [
         'Utilised University customised ServiceNow platform to manage multiple client tickets.',
