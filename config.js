@@ -34,7 +34,8 @@ module.exports = {
       endDate: 'Current',
       priority: 'Internship',
       tasks: [
-        'Developed and tested software applications in C++, deployed said applications as a new product for the company.',
+        'Developed software application in C++, refactored from Python codebase to C++.',
+        'Employed project management techniques while utilising Atlassian software including Jira, Confluence, and Bitbucket, to ensure each development milestone is tracked and completed on time. ',
         'Leveraged problem solving skills while developing an application throughout its full product lifecycle.',
       ],
       imageName: 'schenck_process',
@@ -56,7 +57,7 @@ module.exports = {
       company: 'The University of Newcastle',
       role: 'IT Client Support Assistant',
       startDate: 'Jan 2022',
-      endDate: 'Current',
+      endDate: 'July 2022',
       priority: 'Part-time',
       tasks: [
         'Utilised University customised ServiceNow platform to manage multiple client tickets.',
