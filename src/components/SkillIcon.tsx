@@ -1,13 +1,15 @@
 import React from "react"
 
 type SkillIconProps = {
-  skill: string;
+  skill: () => JSX.Element;
 }
 
 export const SkillIcon = ({ skill }: SkillIconProps) => {
+  const icon = skill();
+
   return (
     <li className="list-inline-item">
-      <i className={`fab ${skill}`}></i>
+      <i>{icon}</i>
     </li>
   )
 }
