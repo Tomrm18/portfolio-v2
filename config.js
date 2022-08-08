@@ -11,7 +11,7 @@ module.exports = {
   firstName: 'Thomas',
   lastName: 'Maguire',
   about:
-    'I am an undergraduate Computer Science student and Software Engineer with a passion for developing and building solutions to solve real-world problems.',
+    'I am an undergraduate Computer Science student and Software Engineer with a passion for developing and building innovative solutions to solve real-world problems.',
   // social
   socialLinks: [
     {

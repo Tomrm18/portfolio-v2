@@ -1,26 +1,30 @@
 import React, { useState } from "react"
 import { SkillIcon } from "./SkillIcon"
-
+import { FaHtml5, FaCss3Alt, FaGitAlt, FaJsSquare, FaReact, FaPython, FaJava } from 'react-icons/fa';
+import { SiTypescript, SiCplusplus } from 'react-icons/si';
 
 export const Skills = () => {
 
   const skills = [
-    { name: "html", logo: "fa-html5" },
-    { name: "css", logo: "fa-css3-alt" },
-    { name: "js", logo: "fa-js-square" },
-    { name: "react", logo: "fa-react" },
-    { name: "git", logo: "fa-git-alt" },
-    { name: "python", logo: "fa-python" },
+    { name: "html", logo: FaHtml5 },
+    { name: "css", logo: FaCss3Alt},
+    { name: "git", logo: FaGitAlt },
+    { name: "js", logo: FaJsSquare },
+    // { name: "ts", logo: SiTypescript },
+    { name: "react", logo: FaReact },
+    { name: "python", logo: FaPython },
+    { name: "cplusplus", logo: SiCplusplus },
+    { name: "java", logo: FaJava }
   ]
 
 
   const renderSkills = (skills) => {
-    return skills.map((skill, index) => {
+    return skills.map((Skill, index) => {
 
       return (
         <SkillIcon 
           key={index}
-          skill={skill.logo}
+          skill={() => <Skill.logo />}
         />
       )
     })
