@@ -8,13 +8,12 @@ export const Skills = () => {
   const skills = [
     { name: "html", logo: FaHtml5 },
     { name: "css", logo: FaCss3Alt},
-    { name: "git", logo: FaGitAlt },
     { name: "js", logo: FaJsSquare },
-    // { name: "ts", logo: SiTypescript },
-    { name: "react", logo: FaReact },
     { name: "python", logo: FaPython },
+    { name: "react", logo: FaReact },
+    { name: "git", logo: FaGitAlt },
+    { name: "java", logo: FaJava },
     { name: "cplusplus", logo: SiCplusplus },
-    { name: "java", logo: FaJava }
   ]
 
 
