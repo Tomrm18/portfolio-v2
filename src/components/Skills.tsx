@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { SkillIcon } from "./SkillIcon"
-import { FaHtml5, FaCss3Alt, FaGitAlt, FaJsSquare, FaReact, FaPython, FaJava } from 'react-icons/fa';
+import { FaHtml5, FaCss3Alt, FaGitAlt, FaJsSquare, FaReact, FaPython, FaJava, FaSass } from 'react-icons/fa';
 import { SiTypescript, SiCplusplus } from 'react-icons/si';
 
 export const Skills = () => {
@@ -8,12 +8,13 @@ export const Skills = () => {
   const skills = [
     { name: "html", logo: FaHtml5 },
     { name: "css", logo: FaCss3Alt},
-    { name: "js", logo: FaJsSquare },
+    { name: "sass", logo: FaSass},
+    { name: "javascript", logo: FaJsSquare },
     { name: "python", logo: FaPython },
     { name: "react", logo: FaReact },
     { name: "git", logo: FaGitAlt },
     { name: "java", logo: FaJava },
-    { name: "cplusplus", logo: SiCplusplus },
+    { name: "c++", logo: SiCplusplus },
   ]
 
 
@@ -24,6 +25,7 @@ export const Skills = () => {
         <SkillIcon 
           key={index}
           skill={() => <Skill.logo />}
+          name={Skill.name}
         />
       )
     })
@@ -42,7 +44,7 @@ export const Skills = () => {
       </div>
       <ul className="list-inline dev-icons">
 
-        <li className="list-inline-item">
+        <li className="list-inline-item skill-items">
           {renderSkills(skills)}
         </li>
 
