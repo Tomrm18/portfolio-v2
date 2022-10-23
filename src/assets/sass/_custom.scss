@@ -1,0 +1,38 @@
+.skill-items {
+  display: flex;
+  flex-direction: row;
+}
+
+.skill-items li {
+  max-width: 60px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-right: 0.75rem !important;
+}
+
+.skill-items li:hover {
+  transform: scale(1.35);
+  
+  h4 {
+    visibility: visible;
+    // animation: fade 1s ease-in;
+  }
+}
+
+.skill-items li h4 {
+  color: #868e96;
+  text-align: center;
+  visibility: hidden;
+  // transform: translateY(-10px);
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+  
+}
