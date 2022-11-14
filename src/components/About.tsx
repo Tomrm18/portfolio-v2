@@ -10,7 +10,7 @@ export const About = ({ config }: AboutProps) => {
     <section
     className="resume-section p-3 p-lg-5 d-flex align-items-center"
     id="about"
-  >
+  > 
     <div className="w-100">
       <div className="text-center">
         <h1 className="mb-0">

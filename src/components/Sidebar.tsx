@@ -13,6 +13,7 @@ type tabItem = {
 export const Sidebar = () => {
 
   const tabItems: tabItem[] = [
+    { content: 'Blog', href: 'https://blog.tomrm.dev/' },
     { content: 'About', href: 'about' },
     { content: 'Experience', href: 'experience' },
     { content: 'Education', href: 'education' },
@@ -66,15 +67,26 @@ export const Sidebar = () => {
         >
           {tabs.map((tab, i) => {
             const { href, content } = tab;
+            
             return (
-              <li className="nav-item" key={href}>
-                <Scroll type="id" element={href}>
-                  <a className="nav-link" href={`#${href}`}>
-                    {content}
+              content == "Blog" ? (
+                <li className="nav-item" key={i}>
+                  <a className="nav-link" target="_blank" href={href}>
+                    <span className="d-none d-lg-block">{content}</span>
                   </a>
-                </Scroll>
-              </li>
-            );
+                </li>
+              ) : 
+               (
+                <li className="nav-item" key={href}>
+                  <Scroll type="id" element={href}>
+                    <a className="nav-link" href={`#${href}`}>
+                      {content}
+                    </a>
+                  </Scroll>
+                </li>
+              )
+            )
+
           })}
         </Scrollspy>
       </div>
