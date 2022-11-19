@@ -1,33 +1,36 @@
 import React, { useState } from "react"
-import { SkillIcon } from "./SkillIcon"
-import { FaHtml5, FaCss3Alt, FaGitAlt, FaJsSquare, FaReact, FaPython, FaJava, FaSass } from 'react-icons/fa';
-import { SiTypescript, SiCplusplus } from 'react-icons/si';
+import { SkillCategory } from "../components"
+import { FaHtml5, FaCss3Alt, FaGitAlt, FaJsSquare, FaReact, FaPython, FaJava, FaSass,  } from 'react-icons/fa';
+import { SiCplusplus, SiCmake, SiMongodb } from 'react-icons/si';
+import { AiOutlineConsoleSql } from 'react-icons/ai';
 
 export const Skills = () => {
 
   const skills = [
-    { name: "html", logo: FaHtml5 },
-    { name: "css", logo: FaCss3Alt},
-    { name: "sass", logo: FaSass},
-    { name: "javascript", logo: FaJsSquare },
-    { name: "python", logo: FaPython },
-    { name: "react", logo: FaReact },
-    { name: "git", logo: FaGitAlt },
-    { name: "java", logo: FaJava },
-    { name: "c++", logo: SiCplusplus },
+    { category: "Programming Languages", skills: [
+      { name: "html", logo: FaHtml5 },
+      { name: "css", logo: FaCss3Alt },
+      { name: "sass", logo: FaSass},
+      { name: "javascript", logo: FaJsSquare },
+      { name: "python", logo: FaPython },
+      { name: "java", logo: FaJava },
+      { name: "c++", logo: SiCplusplus },
+    ]},
+    { category: "Libraries & Frameworks", skills: [
+      { name: "react", logo: FaReact },
+    ]},
+    { category: "Tools", skills: [
+      { name: "git", logo: FaGitAlt },
+      { name: "cmake", logo: SiCmake },
+      { name: "mongodb", logo: SiMongodb },
+      { name: "sql", logo: AiOutlineConsoleSql },
+    ]},
   ]
 
 
   const renderSkills = (skills) => {
-    return skills.map((Skill, index) => {
-
-      return (
-        <SkillIcon 
-          key={index}
-          skill={() => <Skill.logo />}
-          name={Skill.name}
-        />
-      )
+    return skills.map((category, index) => {
+      return <SkillCategory key={index} category={category} />
     })
   }
 
@@ -39,12 +42,9 @@ export const Skills = () => {
     <div className="w-100">
       <h2 className="mb-5">Skills</h2>
 
-      <div className="subheading mb-3">
-        Programming Languages &amp; Tools
-      </div>
       <ul className="list-inline dev-icons">
 
-        <li className="list-inline-item skill-items">
+        <li className="list-inline-item skill-items d-flex flex-column">
           {renderSkills(skills)}
         </li>
 

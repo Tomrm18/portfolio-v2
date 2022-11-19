@@ -83,12 +83,38 @@ module.exports = {
   education: [
     {
       school: 'The University of Newcastle',
-      degree: 'Bachelor of Computer Science',
-      startDate: 'Feb 2020',
-      endDate: 'Current',
-      priority: 'Full-time',
+      items: [
+        {
+          title: 'Bachelor of Computer Science',
+          startDate: 'Feb 2020',
+          endDate: 'Current',
+          priority: 'Full-time',
+        },
+        {
+          title: 'CESE Summer Research Scholarship',
+          startDate: 'Nov 2022',
+          endDate: 'Current',
+          priority: 'Part-time',
+        },
+      ],
       imageName: 'uon',
     },
+    // {
+    //   school: 'The University of Newcastle',
+    //   degree: 'Bachelor of Computer Science',
+    //   startDate: 'Feb 2020',
+    //   endDate: 'Current',
+    //   priority: 'Full-time',
+    //   imageName: 'uon',
+    // },
+    // {
+    //   school: 'The University of Newcastle',
+    //   degree: 'CESE Summer Research Scholarship',
+    //   startDate: 'November 2022',
+    //   endDate: 'Current',
+    //   priority: 'Part-time',
+    //   imageName: 'uon',
+    // },
   ],
   extracurriculars: {
     studentClubs: [
