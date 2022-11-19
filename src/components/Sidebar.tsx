@@ -7,18 +7,20 @@ import { Scroll } from './Scroll';
 
 type tabItem = {
   content: string;
-  href: string
+  href: string;
+  hidden: boolean;
 }
 
 export const Sidebar = () => {
 
   const tabItems: tabItem[] = [
-    { content: 'About', href: 'about' },
-    { content: 'Experience', href: 'experience' },
-    { content: 'Education', href: 'education' },
-    { content: "Extracurriculars", href: "extracurriculars" },
-    { content: 'Skills', href: 'skills' },
-    { content: "Interests", href: "interests" }
+    { content: 'Blog', href: 'https://blog.tomrm.dev/', hidden: true },
+    { content: 'About', href: 'about', hidden: false  },
+    { content: 'Experience', href: 'experience', hidden: false },
+    { content: 'Education', href: 'education', hidden: false },
+    { content: "Extracurriculars", href: "extracurriculars", hidden: false },
+    { content: 'Skills', href: 'skills', hidden: false },
+    { content: "Interests", href: "interests", hidden: false }
   ]
 
   const [tabs, setTabs] = useState(tabItems);
@@ -65,16 +67,31 @@ export const Sidebar = () => {
           className="navbar-nav"
         >
           {tabs.map((tab, i) => {
-            const { href, content } = tab;
+            const { href, content, hidden } = tab;
+
+            if (hidden) {
+              return null;
+            }
+            
             return (
-              <li className="nav-item" key={href}>
-                <Scroll type="id" element={href}>
-                  <a className="nav-link" href={`#${href}`}>
-                    {content}
+              content == "Blog" ? (
+                <li className="nav-item" key={i}>
+                  <a className="nav-link" target="_blank" href={href}>
+                    <span className="d-none d-lg-block">{content}</span>
                   </a>
-                </Scroll>
-              </li>
-            );
+                </li>
+              ) : 
+               (
+                <li className="nav-item" key={href}>
+                  <Scroll type="id" element={href}>
+                    <a className="nav-link" href={`#${href}`}>
+                      {content}
+                    </a>
+                  </Scroll>
+                </li>
+              )
+            )
+
           })}
         </Scrollspy>
       </div>

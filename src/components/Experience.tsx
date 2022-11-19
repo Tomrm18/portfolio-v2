@@ -18,14 +18,16 @@ export const Experience = ({ experience }: ExperienceProps) => {
     return experience.map((job, index) => {
 
       return (
-        <SectionItem 
-        key={index}
-        title={job.role}
-        subtitle={job.company}
-        description={job.description}
-        descriptionList={job.tasks}
-        rightTitle={`${job.startDate} - ${job.endDate} | ${job.priority}`}
-        imageRenderer={<img width={80} src={logoImages[job.imageName].publicURL}  alt={job.imageName} />}
+          job.hidden ? 
+          null :
+          <SectionItem 
+          key={index}
+          title={job.role}
+          subtitle={job.company}
+          description={job.description}
+          descriptionList={job.tasks}
+          rightTitle={`${job.startDate} - ${job.endDate} | ${job.priority}`}
+          imageRenderer={<img width={80} src={logoImages[job.imageName].publicURL}  alt={job.imageName} />}
         />
       )
     })

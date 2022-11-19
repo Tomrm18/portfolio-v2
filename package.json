@@ -2,7 +2,7 @@
   "name": "portfolio-v2",
   "version": "0.0.2",
   "scripts": {
-    "develop": "gatsby develop",
+    "dev": "gatsby develop",
     "build": "npm run clean && gatsby build",
     "deploy": "npm run clean && gatsby build --prefix-paths && gh-pages -d public",
     "serve": "npm run clean && gatsby serve",

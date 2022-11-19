@@ -28,6 +28,16 @@ module.exports = {
   email: 'tmaguire2002@yahoo.com.au',
   experience: [
     {
+      company: 'Lockheed Martin',
+      role: 'Software Engineer',
+      startDate: 'November 2022',
+      endDate: 'Current',
+      priority: 'Internship',
+      tasks: [],
+      imageName: 'lockheed_martin',
+      hidden: true,
+    },
+    {
       company: 'Schenck Process',
       role: 'R&D Digital Engineer',
       startDate: 'July 2022',
@@ -39,6 +49,7 @@ module.exports = {
         'Leveraged problem solving skills while developing an application throughout its full product lifecycle.',
       ],
       imageName: 'schenck_process',
+      hidden: false,
     },
     {
       company: 'Gymetrix',
@@ -52,6 +63,7 @@ module.exports = {
         'Established secure API connections to a fully customised backend to pull and render data from.',
       ],
       imageName: 'gymetrix',
+      hidden: false,
     },
     {
       company: 'The University of Newcastle',
@@ -65,17 +77,44 @@ module.exports = {
         'Updated IT articles ensuring IT Staff can access up-to-date information in a readable and reliable way.',
       ],
       imageName: 'uon',
+      hidden: false,
     },
   ],
   education: [
     {
       school: 'The University of Newcastle',
-      degree: 'Bachelor of Computer Science',
-      startDate: 'Feb 2020',
-      endDate: 'Current',
-      priority: 'Full-time',
+      items: [
+        {
+          title: 'Bachelor of Computer Science',
+          startDate: 'Feb 2020',
+          endDate: 'Current',
+          priority: 'Full-time',
+        },
+        {
+          title: 'CESE Summer Research Scholarship',
+          startDate: 'Nov 2022',
+          endDate: 'Current',
+          priority: 'Part-time',
+        },
+      ],
       imageName: 'uon',
     },
+    // {
+    //   school: 'The University of Newcastle',
+    //   degree: 'Bachelor of Computer Science',
+    //   startDate: 'Feb 2020',
+    //   endDate: 'Current',
+    //   priority: 'Full-time',
+    //   imageName: 'uon',
+    // },
+    // {
+    //   school: 'The University of Newcastle',
+    //   degree: 'CESE Summer Research Scholarship',
+    //   startDate: 'November 2022',
+    //   endDate: 'Current',
+    //   priority: 'Part-time',
+    //   imageName: 'uon',
+    // },
   ],
   extracurriculars: {
     studentClubs: [
