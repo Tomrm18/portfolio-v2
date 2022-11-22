@@ -26,7 +26,12 @@ export const Experience = ({ experience }: ExperienceProps) => {
           subtitle={job.company}
           description={job.description}
           descriptionList={job.tasks}
-          rightTitle={`${job.startDate} - ${job.endDate} | ${job.priority}`}
+          rightTitle={
+            job.priority != "" && job.priority ? 
+            `${job.startDate} - ${job.endDate} | ${job.priority}`
+            : 
+            `${job.startDate} - ${job.endDate}`
+          }
           imageRenderer={<img width={80} src={logoImages[job.imageName].publicURL}  alt={job.imageName} />}
         />
       )

@@ -28,21 +28,21 @@ module.exports = {
   email: 'tmaguire2002@yahoo.com.au',
   experience: [
     {
-      company: 'Lockheed Martin',
-      role: 'Software Engineer',
+      company: 'Lockheed Martin Australia',
+      role: 'Software Engineer Intern',
       startDate: 'November 2022',
       endDate: 'Current',
-      priority: 'Internship',
+      priority: '',
       tasks: [],
       imageName: 'lockheed_martin',
-      hidden: true,
+      hidden: false,
     },
     {
       company: 'Schenck Process',
-      role: 'R&D Digital Engineer',
+      role: 'R&D Digital Engineer Intern',
       startDate: 'July 2022',
       endDate: 'Current',
-      priority: 'Internship',
+      priority: '',
       tasks: [
         'Developed software application in C++, refactored from Python codebase to C++.',
         'Employed project management techniques while utilising Atlassian software including Jira, Confluence, and Bitbucket, to ensure each development milestone is tracked and completed on time. ',
@@ -53,10 +53,10 @@ module.exports = {
     },
     {
       company: 'Gymetrix',
-      role: 'Mobile App Developer',
+      role: 'Contract Mobile App Developer',
       startDate: 'Apr 2022',
       endDate: 'Current',
-      priority: 'Contract',
+      priority: '',
       tasks: [
         'Developed secure and performant customer facing gym application using React Native and TypeScript.',
         'Enabled secure login and authentication via Encryption and Biometrics.',
@@ -70,7 +70,7 @@ module.exports = {
       role: 'IT Client Support Assistant',
       startDate: 'Jan 2022',
       endDate: 'July 2022',
-      priority: 'Part-time',
+      priority: '',
       tasks: [
         'Utilised University customised ServiceNow platform to manage multiple client tickets.',
         'Communicated with clients, enabling quick and effective customer support.',
