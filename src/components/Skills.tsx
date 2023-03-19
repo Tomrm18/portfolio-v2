@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { SkillCategory } from "../components"
-import { FaHtml5, FaCss3Alt, FaGitAlt, FaJsSquare, FaReact, FaPython, FaJava, FaSass,  } from 'react-icons/fa';
+import { FaHtml5, FaCss3Alt, FaGitAlt, FaJsSquare, FaReact, FaPython, FaJava, FaSass } from 'react-icons/fa';
 import { SiCplusplus, SiCmake, SiMongodb } from 'react-icons/si';
 import { AiOutlineConsoleSql } from 'react-icons/ai';
 

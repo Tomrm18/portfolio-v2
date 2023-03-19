@@ -15,6 +15,7 @@ export const Sidebar = () => {
 
   const tabItems: tabItem[] = [
     { content: 'Blog', href: 'https://blog.tomrm.dev/', hidden: true },
+    { content: 'Resume', href: 'https://www.google.com/', hidden: true  },
     { content: 'About', href: 'about', hidden: false  },
     { content: 'Experience', href: 'experience', hidden: false },
     { content: 'Education', href: 'education', hidden: false },

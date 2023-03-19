@@ -30,7 +30,7 @@ module.exports = {
     {
       company: 'Lockheed Martin Australia',
       role: 'Software Engineer Intern',
-      startDate: 'November 2022',
+      startDate: 'Nov 2022',
       endDate: 'Current',
       priority: '',
       tasks: [],
@@ -41,7 +41,7 @@ module.exports = {
       company: 'Schenck Process',
       role: 'R&D Digital Engineer Intern',
       startDate: 'July 2022',
-      endDate: 'Current',
+      endDate: 'Dec 2022',
       priority: '',
       tasks: [
         'Developed software application in C++, refactored from Python codebase to C++.',
@@ -55,7 +55,7 @@ module.exports = {
       company: 'Gymetrix',
       role: 'Contract Mobile App Developer',
       startDate: 'Apr 2022',
-      endDate: 'Current',
+      endDate: 'Jan 2022',
       priority: '',
       tasks: [
         'Developed secure and performant customer facing gym application using React Native and TypeScript.',
@@ -93,7 +93,7 @@ module.exports = {
         {
           title: 'CESE Summer Research Scholarship',
           startDate: 'Nov 2022',
-          endDate: 'Current',
+          endDate: 'Feb 2023',
           priority: 'Part-time',
         },
       ],
