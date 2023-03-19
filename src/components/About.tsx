@@ -1,4 +1,5 @@
 import React from "react"
+import resume from "../assets/pdf/resume.pdf";
 
 type AboutProps = {
   config: any
@@ -24,14 +25,24 @@ export const About = ({ config }: AboutProps) => {
       <p className="lead mb-5">
       {config.about}
       </p>
+
       <div className="social-icons text-center">
         {config.socialLinks.map((social) => {
-          const { icon, url } = social;
+          const { icon, name, url } = social;
+          
           return (
-            <a key={url} href={url} target="_blank">
-              <i className={`fab ${icon}`}></i>
-            </a>
-          );
+            name == "Resume" ?
+
+              (<a key={url} href={resume} target="_blank">
+                <i className={`${icon}`}></i>
+              </a>)
+            :
+            (<a key={url} href={url} target="_blank">
+            <i className={`${icon}`}></i>
+            </a>)
+          )
+
+            
         })}
       </div>
     </div>

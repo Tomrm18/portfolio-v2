@@ -11,18 +11,23 @@ module.exports = {
   firstName: 'Thomas',
   lastName: 'Maguire',
   about:
-    'I am an undergraduate Computer Science student and Software Engineer with a passion for developing and building innovative solutions to solve real-world problems.',
+    'I am an undergraduate Computer Science student at the University of Newcastle (UON) and Software Engineer with a passion for developing and building innovative solutions to solve real-world problems.',
   // social
   socialLinks: [
     {
-      icon: 'fa-github',
+      icon: 'fab fa-github',
       name: 'Github',
       url: 'https://github.com/Tomrm18',
     },
     {
-      icon: 'fa-linkedin-in',
+      icon: 'fab fa-linkedin-in',
       name: 'Linkedin',
       url: 'https://www.linkedin.com/in/thomas-maguire018/',
+    },
+    {
+      icon: 'far fa-file',
+      name: 'Resume',
+      url: '',
     },
   ],
   email: 'tmaguire2002@yahoo.com.au',
