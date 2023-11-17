@@ -38,7 +38,10 @@ module.exports = {
       startDate: 'Nov 2022',
       endDate: 'Current',
       priority: '',
-      tasks: [],
+      tasks: [
+        'Developed Mission-critical systems within an innovative world-first project.',
+        'Utilised Kubernetes to deploy and manage applications in a micro-services environment.'
+      ],
       imageName: 'lockheed_martin',
       hidden: false,
     },
@@ -49,9 +52,9 @@ module.exports = {
       endDate: 'Dec 2022',
       priority: '',
       tasks: [
-        'Developed software application in C++, refactored from Python codebase to C++.',
-        'Employed project management techniques while utilising Atlassian software including Jira, Confluence, and Bitbucket, to ensure each development milestone is tracked and completed on time. ',
-        'Leveraged problem solving skills while developing an application throughout its full product lifecycle.',
+        'Refactored and transformed demo Python Application to Fully-featured C++ application.',
+        'Took charge of project and utilised Atlassian suite of project management tools (Jira, Confluence) to ensure project milestones and deadlines were met.',
+        'Successfully delivered application to customer.'
       ],
       imageName: 'schenck_process',
       hidden: false,
@@ -63,7 +66,7 @@ module.exports = {
       endDate: 'Jan 2022',
       priority: '',
       tasks: [
-        'Developed secure and performant customer facing gym application using React Native and TypeScript.',
+        'Developed secure and performant customer facing mobile application using React Native and TypeScript.',
         'Enabled secure login and authentication via Encryption and Biometrics.',
         'Established secure API connections to a fully customised backend to pull and render data from.',
       ],
@@ -77,9 +80,8 @@ module.exports = {
       endDate: 'July 2022',
       priority: '',
       tasks: [
-        'Utilised University customised ServiceNow platform to manage multiple client tickets.',
-        'Communicated with clients, enabling quick and effective customer support.',
-        'Updated IT articles ensuring IT Staff can access up-to-date information in a readable and reliable way.',
+        'Provided efficient and swift technological support to customers on behalf of the University.',
+        'Updated IT knowledge-base articles and documentation, ensuring IT Staff can access up-to-date information in a readable and reliable method. '
       ],
       imageName: 'uon',
       hidden: false,
@@ -91,8 +93,8 @@ module.exports = {
       items: [
         {
           title: 'Bachelor of Computer Science',
-          startDate: 'Feb 2020',
-          endDate: 'Current',
+          startDate: 'Feb 2021',
+          endDate: 'Dec 2023',
           priority: 'Full-time',
         },
         {
@@ -104,22 +106,6 @@ module.exports = {
       ],
       imageName: 'uon',
     },
-    // {
-    //   school: 'The University of Newcastle',
-    //   degree: 'Bachelor of Computer Science',
-    //   startDate: 'Feb 2020',
-    //   endDate: 'Current',
-    //   priority: 'Full-time',
-    //   imageName: 'uon',
-    // },
-    // {
-    //   school: 'The University of Newcastle',
-    //   degree: 'CESE Summer Research Scholarship',
-    //   startDate: 'November 2022',
-    //   endDate: 'Current',
-    //   priority: 'Part-time',
-    //   imageName: 'uon',
-    // },
   ],
   extracurriculars: {
     studentClubs: [
@@ -128,7 +114,7 @@ module.exports = {
         title: 'Founder & Vice President',
         date: {
           start: 2022,
-          end: 'Current',
+          end: 2023,
         },
       },
     ],

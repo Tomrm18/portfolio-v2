@@ -58,7 +58,7 @@ export const Scroll = ({ type, element, offset, timeout, children }: ScrollProps
   return (
     <Element>
       {typeof children === 'object' ? (
-        cloneElement(children, { onClick: handleClick })
+        cloneElement(children, { onClick: handleClick, onkeydown: handleClick })
       ) : (
         <span onClick={handleClick}>{children}</span>
       )}

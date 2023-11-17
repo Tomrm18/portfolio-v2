@@ -1,27 +1,30 @@
 import React, { useState } from "react"
 import { SkillCategory } from "../components"
-import { FaHtml5, FaCss3Alt, FaGitAlt, FaJsSquare, FaReact, FaPython, FaJava, FaSass } from 'react-icons/fa';
-import { SiCplusplus, SiCmake, SiMongodb } from 'react-icons/si';
+import { FaHtml5, FaCss3Alt, FaGitAlt, FaJsSquare, FaReact, FaPython, FaJava, FaSass, FaDocker  } from 'react-icons/fa';
+import { FaGolang } from "react-icons/fa6";
+import { SiCplusplus, SiMongodb, SiKubernetes } from 'react-icons/si';
 import { AiOutlineConsoleSql } from 'react-icons/ai';
 
 export const Skills = () => {
 
   const skills = [
-    { category: "Programming Languages", skills: [
+    { category: "Web Technologies", skills: [
       { name: "html", logo: FaHtml5 },
       { name: "css", logo: FaCss3Alt },
       { name: "sass", logo: FaSass},
+      { name: "react", logo: FaReact },
+    ]},
+    { category: "Programming Languages", skills: [
       { name: "javascript", logo: FaJsSquare },
       { name: "python", logo: FaPython },
+      { name: "golang", logo: FaGolang },
       { name: "java", logo: FaJava },
       { name: "c++", logo: SiCplusplus },
     ]},
-    { category: "Libraries & Frameworks", skills: [
-      { name: "react", logo: FaReact },
-    ]},
     { category: "Tools", skills: [
       { name: "git", logo: FaGitAlt },
-      { name: "cmake", logo: SiCmake },
+      { name: "docker", logo: FaDocker },
+      { name: "kubernetes", logo: SiKubernetes },
       { name: "mongodb", logo: SiMongodb },
       { name: "sql", logo: AiOutlineConsoleSql },
     ]},

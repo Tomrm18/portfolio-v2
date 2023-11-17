@@ -13,7 +13,6 @@ module.exports = {
         path: `${__dirname}/src/assets`,
       },
     },
-    'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
